@@ -125,7 +125,7 @@
     }
 
     .imageBack {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         opacity: 0.8;
         filter: alpha(opacity=80);
     }
@@ -356,7 +356,7 @@
     }
 
     .formcontain {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -388,7 +388,7 @@
 
 
     .acercade {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         text-align: center;
     }
 
@@ -408,7 +408,7 @@
     }
 
     .register {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -524,7 +524,7 @@
     }
 
     .imageBack {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         opacity: 0.8;
         filter: alpha(opacity=80);
     }
@@ -822,7 +822,7 @@
     }
 
     .formcontain {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -851,7 +851,7 @@
     }
 
     .acercade {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         text-align: center;
     }
 
@@ -870,7 +870,7 @@
     }
 
     .register {
-        background-image: url(/assets/img/imagen\ de\ fondo.jpg);
+        background-image: url(../img/imagen\ de\ fondo.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
