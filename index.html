@@ -6,208 +6,375 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passaparty</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <div class="container-fluid">
 
-    <div class="gridContainer">
-        <header>
+        <div class="row1">
+            <div class="col">
+                <nav class="navbar navbar-light bg-light fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="./assets/img/imagen pproyecto coder.png" alt="Logo"
+                                width="80px" height="60px"></a>
+                        <h1 id="title1">PASSAPARTY</h1>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> 
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./assets/pages/eventos.html" target="_blank" >Todos los eventos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./assets/pages/contacto.html" target="_blank">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./assets/pages/registro.html" target="_blank"> Registro</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./assets/pages/acercade.html" target="_blank"> Acerca de</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Ingresar
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">We'll never share your email
+                                                        with
+                                                        anyone else.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="logo__page">
-                <img src="./assets/img/imagen pproyecto coder.png" alt="">
+                </nav>
+
             </div>
-
-            <nav id="navigation__menu">
-
-                <div class="control__menu">
-                    <a href="#navigation__menu" class="open"> <span> <img id="icon"
-                                src="./assets/img/imagen de menu.jpg" alt=""> </span> </a>
-                    <a href="#" class="close"> <span> <img id="icon" src="./assets/img/imagen de menu.jpg" alt="">
-                        </span> </a>
+        </div>
+        <div class="row5">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/carrusel 1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bienvenidos</h5>
+                                    <p>Somos el sitio donde podes tener la oportunidad de disfrutar el encuentro con tu
+                                        artista favorito, y vivir una noche magica junto a el, asi como tambien
+                                        participar en las mejores fiestas, bailes y conciertos que se presenten en el
+                                        pais. </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/carrusel 1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Disfruta el momento con tu artista...</h5>
+                                    <p>Obtiene la posibilidad de un encuentro post-concierto con la entrada vip
+                                        exclusiva de Passaparty.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/carrusel 1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Encuentranos en las siguientas redes sociales:</h5>
+                                    <a href=""><img id="media4" src="assets/img/facebook.png" alt=""></a>
+                                    <a href=""><img id="media5" src="assets/img/whatsapp.png" alt=""></a>
+                                    <a href=""><img id="media6" src="assets/img/instagram.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-
-                <ul id="menu">
-                    <a href="./index.html">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="assets/pages/registro.html" target="_blank"> 
-                        <li>Registro</li>
-                    </a>
-                    <a href="assets/pages/contacto.html" target="_blank">
-                        <li>Contacto</li>
-                    </a>
-                    <a href="assets/pages/acercade.html" target="_blank">
-                        <li>Acerca de</li>
-                    </a>
-
-                </ul>
-
-            </nav>
-
-        <div class="menu__bigdisplay">
-            <ul id="menu2">
-                <a href="./index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="assets/pages/registro.html" target="_blank"">
-                    <li>Registro</li>
-                </a>
-                <a href="assets/pages/contacto.html" target="_blank">
-                    <li>Contacto</li>
-                </a>
-                <a href="assets/pages/acercade.html" target="_blank">
-                    <li>Acerca de</li>
-                </a>
-
-            </ul>
+            </div>
         </div>
 
-        </header>
+        <hr class="separator">
 
-        <hr id="first_separator">
-
-        <div class="imageBack">
-            <section id="title">
-
-                <div class="name__page">
-                    <h1>PASSAPARTY</h1>
-                </div>
-
-                <div class="social__media">
-                    <a href=""><img id="media1" src="assets/img/facebook.png" alt=""></a>
-                    <a href=""><img id="media2" src="assets/img/whatsapp.png" alt=""></a>
-                    <a href=""><img id="media3" src="assets/img/instagram.png" alt=""></a>
-                </div>
-
-            </section>
-
-            <section id="highlight__events">
-
-                <h3 id="highlight"> Todos los Eventos </h3>
-
-            <div class="eventsPosition">
-                <div class="highlight1">
-                    <img src="assets/img/Header-Duki-sold-out.jpg" alt="">
-                    <h4>DUKI</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
-                <div class="highlight2">
-                    <img src="assets/img/maria becerra.jpg" alt="">
-                    <h4>MARIA BECERRA</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
-                <div class="highlight3">
-                    <img src="assets/img/asan.jpg" alt="">
-                    <h4>ASAN</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
-                <div class="highlight4">
-                    <img src="assets/img/ysy a.jpg" alt="">
-                    <h4>YSY A</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
-                <div class="highlight5">
-                    <img src="assets/img/lgante.jpg" alt="">
-                    <h4>L-GANTE</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
-                <div class="highlight6">
-                    <img src="assets/img/khea.jpg" alt="">
-                    <h4>KHEA</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
-                <div class="highlight7">
-                    <img src="assets/img/bad bunny.jpg" alt="">
-                    <h4>BAD BUNNY</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
-                <div class="highlight8">
-                    <img src="assets/img/quevedo.jpg" alt="">
-                    <h4>QUEVEDO</h4>
-                    <label for="enviar">
-                        <input type="submit" value="Ver mas">
-                    </label>
-                </div>
+        <div class="row2">
+            <div class="col-title">
+                <h1>PASSAPARTY</h1>
+                <a href=""><img id="media1" src="assets/img/facebook.png" alt=""></a>
+                <a href=""><img id="media2" src="assets/img/whatsapp.png" alt=""></a>
+                <a href=""><img id="media3" src="assets/img/instagram.png" alt=""></a>
             </div>
-            </section>
-
-            <section>
-                <div class="events__comingsoon">
-
-                    <h3>Proximos Eventos disponibles</h3>
-                    <ul class="slider">
-                        <li id="slide1">
-                            <img src="assets/img/anuel.webp" alt="">
-                        </li>
-                        <li id="slide2">
-                            <img src="assets/img/myketower.jpg" alt="">
-                        </li>
-                        <li id="slide3">
-                            <img src="assets/img/emilia.jpg" alt="">
-                        </li>
-                        <li id="slide4">
-                            <img src="assets/img/tini.webp" alt="">
-                        </li>
-                    </ul>
-            
-
-                    <ul class="menu">
-
-                        <li>
-                            <a href="#slide1">1</a>
-                        </li>
-                        <li>
-                            <a href="#slide2">2</a>
-                        </li>
-                        <li>
-                            <a href="#slide3">3</a>
-                        </li>
-                        <li>
-                            <a href="#slide4">4</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
         </div>
 
-        <hr id="first_separator">
-
-        <footer>
-            <div class="get__news">
-                <h3>Enterate de todo</h3>
-                <div class="emailid">
-                    <p id="recomend">Enterate de todos los shows y eventos de tus artistas favoritos y adquiere tickets para ir al
-                        concierto de tu vida.</p>
-                    <label for="email">
-                        <input type="email" placeholder="Ingresa tu email">
-                    </label>
+        <div class="row3">
+            <h2>Destacados del Mes</h2>
+            <div class="col-card">
+                <div class="card" style="width: 25rem;">
+                    <img src="./assets/img/Header-Duki-sold-out.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DUKI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
                 </div>
-                <div class="acept">
-                <label for="aceptar">
-                    <input type="submit" value="Aceptar">
-                </label>
+                <div class="card" style="width: 25rem;">
+                    <img src="./assets/img/maria becerra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MARIA BECERRA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="./assets/img/asan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ASAN</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="./assets/img/bad bunny.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BAD BUNNY</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="./assets/img/ysy a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">YSY A</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="./assets/img/quevedo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">QUEVEDO</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
 
+        <hr class="separator2">
+
+        <div class="row4">
+            <h2>Proximos Eventos</h2>
+            <div class="col2">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/khea.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/anuel.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="tini1" src="./assets/img/tini.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/emilia.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row7">
+            <div class="title-nexteventes">
+                <h2>Proximos eventos</h2>
+            </div>
+            <div class="col">
+                <section id="next-events">
+                    <div class="owl-carousel">
+                        <div> <img src="./assets/img/emilia.jpg" alt=""> </div>
+                        <div> <img src="./assets/img/anuel.webp" alt=""> </div>
+                        <div id="tini"> <img src="./assets/img/tini.webp" alt=""> </div>
+                        <div> <img src="./assets/img/lgante.jpg" alt=""> </div>
+                        <div> <img src="./assets/img/khea.jpg" alt=""> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="row6">
+            <div class="col">
+                <footer class="py-5">
+                    <div class="row">
+                        <div class="col-2">
+                            <h5>Informacion</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-4 offset-1">
+                            <form>
+                                <h5>Subscribete para enterarte de todo</h5>
+                                <p>Enterate de los shows de tus artistas favoritos y adquiere la entrada en
+                                    pre-venta exclusiva.</p>
+                                <div class="d-flex w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn btn-primary" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between py-4 my-4 border-top">
+                        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#twitter" />
+                                    </svg></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#instagram" />
+                                    </svg></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#facebook" />
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+
+
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        </script>
+
+        <script>
+            $('.menu-icon').click(function () {
+
+                $('header nav').slideToggle();
+
+            })
+        </script>
 </body>
 
 </html>

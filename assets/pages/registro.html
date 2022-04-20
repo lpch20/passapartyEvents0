@@ -6,139 +6,337 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passaparty</title>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
     <link rel="stylesheet" href="./../css/style.css">
 </head>
 
 <body>
-    <div class="gridContainer">
-        <header>
+    <div class="container-fluid">
 
-            <div class="logo__page">
-                <img src="./../img/imagen pproyecto coder.png" alt="">
+        <div class="row1">
+            <div class="col">
+                <nav class="navbar navbar-light bg-light fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="./../img/imagen pproyecto coder.png" alt="Logo"
+                                width="80px" height="60px"></a>
+                        <h1 id="title1">PASSAPARTY</h1>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./../../index.html"
+                                            target="_blank">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./eventos.html" target="_blank">Todos los eventos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./registro.html">Registro</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./contacto.html" target="_blank">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./acercade.html" target="_blank">Acerca de</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Ingresar
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">We'll never share your email
+                                                        with
+                                                        anyone else.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+
             </div>
-
-            <nav id="navigation__menu">
-
-                <div class="control__menu">
-                    <a href="#navigation__menu" class="open"> <span> <img id="icon"
-                                src="./../img/imagen de menu.jpg" alt=""> </span> </a>
-                    <a href="#" class="close"> <span> <img id="icon" src="./../img/imagen de menu.jpg" alt="">
-                        </span> </a>
-                </div>
-
-                <ul id="menu">
-                    <a href="./../../index.html" target="_blank">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="./registro.html"> 
-                        <li>Registro</li>
-                    </a>
-                    <a href="./contacto.html" target="_blank">
-                        <li>Contacto</li>
-                    </a>
-                    <a href="./acercade.html" target="_blank">
-                        <li>Acerca de</li>
-                    </a>
-
-                </ul>
-
-            </nav>
-
-        <div class="menu__bigdisplay">
-            <ul id="menu2">
-                <a href="./../../index.html" target= "_blank">
-                    <li>Inicio</li>
-                </a>
-                <a href="./registro.html">
-                    <li>Registro</li>
-                </a>
-                <a href="./contacto.html" target="_blank">
-                    <li>Contacto</li>
-                </a>
-                <a href="./acercade.html" target="_blank">
-                    <li>Acerca de</li>
-                </a>
-
-            </ul>
         </div>
 
-        </header>
+        <div class="row8">
+            <div class="col-title2">
+                <h1>Registrarse</h1>
+            </div>
+        </div>
 
-        <hr id="first_separator">
+        <div class="row">
+            <div class="col-register">
+                <form class="row9 g-3">
+                    <div class="col-md-4">
+                        <label for="validationDefault01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault02" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">Pais</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault04" class="form-label">Ciudad</label>
+                        <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Montevideo</option>
+                            <option>Durazno</option>
+                            <option>Tacuarembo</option>
+                            <option>Rivera</option>
+                            <option>Salto</option>
+                            <option>Flores</option>
+                            <option>Maldonado</option>
+                            <option>Canelones</option>
+                            <option>Florida</option>
+                            <option>Soriano</option>
+                            <option>Paysandu</option>
+                            <option>Treinta y Tres</option>
+                            <option>Rocha</option>
+                            <option>Colonia</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Repetir Contraseña</label>
+                        <input type="password" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Estoy de acuerdo con los terminos y condiciones.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Registrarse</button>
+                    </div>
 
-            <div class="register">
+                    <div class="terminos">
+                        <div class="card text-center">
 
-                <h3>Registrate</h3>
+                            <div class="card-header">
+                                Terminos y condiciones.
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">INFORMACIÓN RELEVANTE
 
-                <form class="register__form" action="evento.html" method="post">
+                                    Es requisito necesario para la adquisición de los productos que se ofrecen en este
+                                    sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se
+                                    redactan. El uso de nuestros servicios así como la compra de nuestros productos
+                                    implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el
+                                    presente
+                                    documento. Todas los productos que son ofrecidos por nuestro sitio web pudieran ser
+                                    creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso
+                                    estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para
+                                    adquirir
+                                    un producto, será necesario el registro por parte del usuario, con ingreso de datos
+                                    personales fidedignos y definición de una contraseña.
 
-                    <div class="name">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre">
-                    </div>
-                    <div class="apellido">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido">
-                    </div>
-                    <div class="cedula">
-                        <label for="cedula">Cedula</label>
-                        <input type="text" name="cedula">
-                    </div>
-    
-                    <div class="nacimiento">
-                        <label for="nacimiento">Fecha de Nacimiento</label>
-                        <input type="date" name="nacimiento">
-                    </div>
-                    <div class=" pais__nacimiento">
-                        <label for="pais de nacimiento">Pais de nacimiento</label>
-                        <input type="text" name="pais de nacimientro">
-                    </div>
+                                    El usuario puede elegir y cambiar la clave para su acceso de administración de la
+                                    cuenta
+                                    en cualquier momento, en caso de que se haya registrado y que sea necesario para la
+                                    compra de alguno de nuestros productos. no asume la responsabilidad en caso de que
+                                    entregue dicha clave a terceros.
 
-                    <div class="correo">
-                        <label for="correo">Correo electronico</label>
-                        <input type="email" name="correo">
-                    </div>
+                                    Todas las compras y transacciones que se lleven a cabo por medio de este sitio web,
+                                    están sujetas a un proceso de confirmación y verificación, el cual podría incluir la
+                                    verificación del stock y disponibilidad de producto, validación de la forma de pago,
+                                    validación de la factura (en caso de existir) y el cumplimiento de las condiciones
+                                    requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera
+                                    una
+                                    verificación por medio de correo electrónico.
 
-                    <div class="password">
-                        <label for="password">Contraseña</label>
-                        <input type="password" name="password">
-                    </div>
+                                    Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en
+                                    las
+                                    compras realizadas en este sitio web.
 
-                    <div class="photo__cedula">
-                        <label for="photo__cedula">Ingrese foto de su documento</label>
-                        <input type="file" name="photo__cedula">
-                    </div>
-                    
-                    <div class="enviador">
-                        <a href="www.passaparty.com.uy/buscador.">Registrate</a>
-                    </div>
+                                    LICENCIA
 
+                                    a través de su sitio web concede una licencia para que los usuarios utilicen los
+                                    productos que son vendidos en este sitio web de acuerdo a los Términos y Condiciones
+                                    que
+                                    se describen en este documento.
+
+                                    USO NO AUTORIZADO
+
+                                    En caso de que aplique (para venta de software, templetes, u otro producto de diseño
+                                    y
+                                    programación) usted no puede colocar uno de nuestros productos, modificado o sin
+                                    modificar, en un CD, sitio web o ningún otro medio y ofrecerlos para la
+                                    redistribución o
+                                    la reventa de ningún tipo.
+
+                                    PROPIEDAD
+
+                                    Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros
+                                    productos, modificado o sin modificar. Todos los productos son propiedad de los
+                                    proveedores del contenido. En caso de que no se especifique lo contrario, nuestros
+                                    productos se proporcionan sin ningún tipo de garantía, expresa o implícita. En
+                                    ningún
+                                    esta compañía será responsables de ningún daño incluyendo, pero no limitado a, daños
+                                    directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas
+                                    resultantes
+                                    del uso o de la imposibilidad de utilizar nuestros productos.
+
+                                    POLÍTICA DE REEMBOLSO Y GARANTÍA
+
+                                    En el caso de productos que sean mercancías irrevocables no-tangibles, no realizamos
+                                    reembolsos después de que se envíe el producto, usted tiene la responsabilidad de
+                                    entender antes de comprarlo. Le pedimos que lea cuidadosamente antes de comprarlo.
+                                    Hacemos solamente excepciones con esta regla cuando la descripción no se ajusta al
+                                    producto. Hay algunos productos que pudieran tener garantía y posibilidad de
+                                    reembolso
+                                    pero este será especificado al comprar el producto. En tales casos la garantía solo
+                                    cubrirá fallas de fábrica y sólo se hará efectiva cuando el producto se haya usado
+                                    correctamente. La garantía no cubre averías o daños ocasionados por uso indebido.
+                                    Los
+                                    términos de la garantía están asociados a fallas de fabricación y funcionamiento en
+                                    condiciones normales de los productos y sólo se harán efectivos estos términos si el
+                                    equipo ha sido usado correctamente. Esto incluye:
+
+                                    – De acuerdo a las especificaciones técnicas indicadas para cada producto.
+                                    – En condiciones ambientales acorde con las especificaciones indicadas por el
+                                    fabricante.
+                                    – En uso específico para la función con que fue diseñado de fábrica.
+                                    – En condiciones de operación eléctricas acorde con las especificaciones y
+                                    tolerancias
+                                    indicadas.
+                                </p>
+                                <a href="#" class="btn btn-primary">Acepto</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2 days ago
+                            </div>
+
+                        </div>
+                    </div>
                 </form>
+            </div>
+        </div>
 
+        <div class="row6">
+            <div class="col">
+                <footer class="py-5">
+                    <div class="row">
+                        <div class="col-2">
+                            <h5>Informacion</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-4 offset-1">
+                            <form>
+                                <h5>Subscribete para enterarte de todo</h5>
+                                <p>Enterate de los shows de tus artistas favoritos y adquiere la entrada en
+                                    pre-venta exclusiva.</p>
+                                <div class="d-flex w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn btn-primary" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between py-4 my-4 border-top">
+                        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#twitter" />
+                                    </svg></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#instagram" />
+                                    </svg></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#facebook" />
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
 
             </div>
+        </div>
 
-        <hr id="first_separator">
 
-        <footer>
-            <div class="get__news">
-                <h3>Enterate de todo</h3>
-                <div class="emailid">
-                    <p id="recomend">Enterate de todos los shows y eventos de tus artistas favoritos y adquiere tickets para ir al
-                        concierto de tu vida.</p>
-                    <label for="email">
-                        <input type="email" placeholder="Ingresa tu email">
-                    </label>
-                </div>
-                <div class="acept">
-                <label for="aceptar">
-                    <input type="submit" value="Aceptar">
-                </label>
-                </div>
-            </div>
-        </footer>
+
+
+
+
+
+
+
+
+
     </div>
-
+    <script src="./../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
