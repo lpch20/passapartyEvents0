@@ -24,7 +24,7 @@ body {
 }
 
 .col-title h1 {
-    font-size: 80px;
+    font-size: 60px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color: azure;
@@ -75,7 +75,7 @@ body {
 }
 
 #tini1{
-    height: 303px;
+    height: 262px;
 }
 
 .py-5 {
@@ -189,10 +189,159 @@ body {
     margin-top: 60px;
 }
 
+.icon-black{
+    display: none;
+}
+
+footer{
+    background-color: azure;
+
+}
+
+#subscribirse {
+    border-style: solid;
+    border-color: black;
+}
+
+#second-carousel{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+#tini1{
+    height: 225px;
+}
 
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:340px) and (max-width:767px){
 
+
+    .col-title {
+        margin-top: 200px;
+        text-align: center;
+        margin-left: 40px;
+    }
+    
+    #title1 {
+        display: none;
+    }
+
+    .row3 h2 {
+        margin-left: 40px;
+    }
+
+    .row4 h2{
+        margin-left: 40px;
+    }
+    
+    .col-title h1 {
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: azure;
+        margin: auto;
+    }
+
+    .col-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card {
+        margin-bottom: 40px;
+        background-color: burlywood;
+        margin-left: 30px;
+        
+    }
+    
+    .card img {
+        height: 250px;
+        transition: height 3s;
+        margin: auto;
+    }
+    
+    .card img:hover {
+        height: 300px;
+    }
+
+    .row4 {
+        margin: auto;
+    }
+
+    #second-carousel{
+        width: 100%;
+    }
+
+    footer{
+        margin-left: 40px;
+        margin: auto;
+    }
+
+    #email-fot{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1019px) {
+    .row5 {
+        display: flex;
+        margin: auto;
+        margin-top: 250px;
+        width: 750px;
+    }
+
+    #title1{
+        display: flex;
+        font-size: 60px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        margin: auto;
+    }
+
+    .col-title h1 {
+        display: none;
+    }
+
+    .icon-color{
+        display: none;
+    }
+
+    .carousel-caption {
+        margin-bottom: 120px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .carousel-caption p {
+        padding: px;
+        font-size: 20px;
+    }
+
+    .carousel-caption img {
+        width: 60px;
+    }
+
+    #second-carousel{
+        width: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
+    #tini1{
+        height: 393px;
+    }
+
+   
+
+}
+
+@media only screen and (min-width:1020px) {
+
+    
     .navbar-brand img {
         mix-blend-mode: multiply;
     }
@@ -210,6 +359,8 @@ body {
         display: flex;
         font-size: 60px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        margin: auto;
     }
 
     .row5 {
@@ -374,6 +525,10 @@ body {
     .col-register{
         margin-top: 40px;
         justify-content: space-between;
+    }
+
+    .icon-color{
+        display: none;
     }
     
 
