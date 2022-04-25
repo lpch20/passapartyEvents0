@@ -3,10 +3,9 @@
     padding: 0;
 }
 
-
-
 body {
     background-image: url(../img/imagen\ de\ fondo.jpg);
+    background-repeat: repeat-y;
     background-size: auto;
 }
 
@@ -33,6 +32,7 @@ body {
 .col-title img {
     width: 40px;
     margin-top: 80px;
+    transition: 2s;
 }
 
 .row3 {
@@ -56,6 +56,12 @@ body {
     padding: 20px;
 }
 
+.card-body ul {
+    list-style: none;
+    text-align: start;
+    padding: 5px;
+}
+
 .card img {
     height: 250px;
     transition: height 3s;
@@ -74,7 +80,7 @@ body {
     color: azure;
 }
 
-#tini1{
+#tini1 {
     height: 262px;
 }
 
@@ -106,32 +112,37 @@ body {
     justify-content: center;
 }
 
-.separator2{
+.btn{
+    height: 40px;
+    margin-top: 20px;
+}
+
+.separator2 {
     display: none;
 }
 
-.row5{
+.row5 {
     display: none;
 }
 
-.row7{
+.row7 {
     display: none;
 }
 
-.col-title2 h1{
-    font-size: 80px;
+.col-title2 h1 {
+    font-size: 60px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color: azure;
     margin-top: 200px;
 }
 
-.accordion-body{
+.accordion-body {
     display: flex;
     justify-content: center;
 }
 
-.accordion{
+.accordion {
     margin: auto;
     padding: 40px;
     margin-top: 80px;
@@ -145,28 +156,28 @@ body {
 }
 
 
-.accordion-item{
+.accordion-item {
     margin-bottom: 50px;
 }
 
-#separator-events{
+#separator-events {
     margin-bottom: 750px;
 }
 
-.row-pay h2{
+.row-pay h2 {
     text-align: center;
     font-size: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: azure;
 }
 
-.row-pay img{
+.row-pay img {
     width: 200px;
     height: 150px;
     border-radius: 5px;
 }
 
-.btn2{
+.btn2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,22 +189,15 @@ body {
     margin-top: 40px;
 }
 
-.col-register label{
-    color: aliceblue;
-}
-.col-register{
-    margin-top: 40px;
-}
-
-.terminos{
+.terminos {
     margin-top: 60px;
 }
 
-.icon-black{
+.icon-black {
     display: none;
 }
 
-footer{
+footer {
     background-color: azure;
 
 }
@@ -203,26 +207,254 @@ footer{
     border-color: black;
 }
 
-#second-carousel{
+#second-carousel {
     width: 400px;
     margin: auto;
     margin-bottom: 70px;
 }
 
-#tini1{
+#tini1 {
     height: 225px;
 }
 
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 350px;
+    position: absolute;
+}
 
-@media only screen and (min-width:340px) and (max-width:767px){
+#boton-evento {
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+}
 
+
+.registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    height: 40px;
+    box-shadow: none;
+    color: #969fa4;
+    margin-top: 20px;
+}
+
+.form-control:focus {
+    border-color: #5cb85c;
+}
+
+.form-control,
+.btn {
+    border-radius: 3px;
+}
+
+.signup-form {
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+.signup-form h2 {
+    color: #636363;
+    margin: 0 0 15px;
+    position: relative;
+    text-align: center;
+}
+
+.signup-form h2:before,
+.signup-form h2:after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #532a2a;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.signup-form h2:before {
+    left: 0;
+}
+
+.signup-form h2:after {
+    right: 0;
+}
+
+.signup-form .hint-text {
+    color: #999;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signup-form form {
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: #f2f3f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 140px;
+    outline: none !important;
+}
+
+.signup-form .row div:first-child {
+    padding-right: 10px;
+}
+
+.signup-form .row div:last-child {
+    padding-left: 10px;
+}
+
+.signup-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.signup-form a:hover {
+    text-decoration: none;
+}
+
+.signup-form form a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+
+.row-register {
+    margin-top: 150px;
+}
+
+.row-contact { 
+    margin-top: 150px;
+    background-color: antiquewhite;
+}
+
+#contenedor-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+    padding: 20px;
+}
+
+.form-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+#contactar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#message {
+    height: 120px;
+}
+
+.redes{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.redes h4{
+    text-align: center;
+    font-size: 28px;
+}
+
+.redes img {
+    width: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.correo-electronico {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.correo-electronico h4{
+    margin-top: 2px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.form-horizontal h2{
+    font-size: 40px;
+}
+
+.acercade{
+    margin-top: 150px;
+}
+
+.acercade img{
+    width: 600px;
+}
+
+.acercade h2{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.acercade p{
+    color: white;
+}
+
+#whatsapp a {
+    background: none;
+    position: fixed;
+    top: 88%;
+    right: 1%;
+}
+
+#whatsapp img{
+    width: 75px;
+    transition: 1s;
+}
+
+#whatsapp img:hover{
+    width: 95px;
+}
+
+
+
+@media only screen and (min-width:340px) and (max-width:767px) {
 
     .col-title {
         margin-top: 200px;
         text-align: center;
         margin-left: 40px;
     }
-    
+
     #title1 {
         display: none;
     }
@@ -231,10 +463,10 @@ footer{
         margin-left: 40px;
     }
 
-    .row4 h2{
+    .row4 h2 {
         margin-left: 40px;
     }
-    
+
     .col-title h1 {
         font-size: 50px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -243,24 +475,23 @@ footer{
         margin: auto;
     }
 
-    .col-card{
+    .col-card {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .card {
         margin-bottom: 40px;
         background-color: burlywood;
-        margin-left: 30px;
-        
     }
-    
+
     .card img {
         height: 250px;
         transition: height 3s;
         margin: auto;
     }
-    
+
     .card img:hover {
         height: 300px;
     }
@@ -269,18 +500,41 @@ footer{
         margin: auto;
     }
 
-    #second-carousel{
-        width: 100%;
+    #second-carousel {
+        max-width: 385px;
     }
 
-    footer{
+    footer {
         margin-left: 40px;
         margin: auto;
-    }
-
-    #email-fot{
         width: 100%;
     }
+
+    #email-fot {
+        width: 100%;
+    }
+
+    .col-pay {
+        margin-bottom: 100px;
+    }
+
+    .signup-form {
+        width: 250px;
+        margin: 0 auto;
+        padding: 30px 0;
+        font-size: 15px;
+    }
+
+    .acercade img{
+        width: 250px;
+        margin-bottom: 25px;
+    }
+
+    .icon-color img{
+        width: 40px;
+        transition: 3s;
+    }
+
 }
 
 @media only screen and (min-width:768px) and (max-width:1019px) {
@@ -291,7 +545,7 @@ footer{
         width: 750px;
     }
 
-    #title1{
+    #title1 {
         display: flex;
         font-size: 60px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -303,7 +557,7 @@ footer{
         display: none;
     }
 
-    .icon-color{
+    .icon-color {
         display: none;
     }
 
@@ -325,25 +579,41 @@ footer{
         width: 60px;
     }
 
-    #second-carousel{
+    #second-carousel {
         width: 700px;
         margin: auto;
         margin-bottom: 70px;
     }
 
-    #tini1{
+    #tini1 {
         height: 393px;
     }
 
-   
+    .col-pay {
+        margin-bottom: 100px;
+    }
+
+    .acercade img{
+        width: 400px;
+        margin-bottom: 25px;
+    }
 
 }
 
 @media only screen and (min-width:1020px) {
 
-    
+
     .navbar-brand img {
         mix-blend-mode: multiply;
+    }
+
+    #title1{
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        margin: auto;
     }
 
     .col-title h1 {
@@ -355,7 +625,7 @@ footer{
         margin-top: 80px;
     }
 
-    #title1{
+    #title1 {
         display: flex;
         font-size: 60px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -387,7 +657,13 @@ footer{
         width: 60px;
         margin-bottom: 50px;
         margin-right: 20px;
+        transition: 2s;
     }
+
+    .carousel-caption img:hover{
+        width: 100px;
+    }
+
 
     .media4 {
         width: 10px;
@@ -432,8 +708,7 @@ footer{
         margin-bottom: 20px;
         text-align: center;
         background-color: white;
-        opacity: 0.9
-        ;
+        opacity: 0.9;
     }
 
     .row3 h2 {
@@ -443,35 +718,39 @@ footer{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: black;
         text-align: center;
+        background-color: rgba(227, 217, 217, 0.8);
+        border-radius: 2px;
     }
 
     .separator2 {
         margin-top: 469px;
     }
 
-    .row4{
+    .row4 {
         display: none;
     }
 
-    .row7{
+    .row7 {
         margin-top: 100px;
         padding: 40px;
         display: flex;
         flex-direction: column;
     }
 
-    .title-nexteventes{ 
+    .title-nexteventes {
         margin: auto;
-        color:black;
+        color: black;
         margin-bottom: 80px;
+        background-color: rgba(227, 217, 217, 0.8);
+        border-radius: 2px;
     }
 
-    .title-nexteventes h2{
+    .title-nexteventes h2 {
         font-size: 60px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
-    #tini{
+    #tini {
         height: 173px;
     }
 
@@ -480,7 +759,7 @@ footer{
         flex-direction: row;
     }
 
-    .accordion-item{
+    .accordion-item {
         margin-right: 5px;
     }
 
@@ -489,47 +768,99 @@ footer{
         justify-content: center;
     }
 
-    .row8{
-        display: flex;
-        justify-content: center;
-    }
-
-    .col-title2 h1{
-        font-size: 80px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        color: azure;
-        margin-top: 200px;
-    }
-
-    .row-pay h2{
+    .row-pay h2 {
         color: black;
     }
 
     .col-pay {
         display: flex;
         flex-direction: column;
+        margin-bottom: 60px;
     }
 
-    .contenedor-pay{
+    .contenedor-pay {
         display: flex;
 
     }
 
-    .row9{
+    .row9 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .col-register{
-        margin-top: 40px;
-        justify-content: space-between;
-    }
-
-    .icon-color{
+    .icon-color {
         display: none;
     }
-    
 
+    .col-title2 h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+    .row-contact { 
+        margin-top: 150px;
+        background-color: antiquewhite;
+    }
+    
+    #contenedor-redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    
+    .form-horizontal{
+        display: flex;
+        align-items: center;
+    }
+    
+    .contactar {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+    
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+    
+    #contactar {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #message {
+        height: 120px;
+    }
+    
+    .redes{
+        background-color: antiquewhite;
+    }
+    
+    .redes h4{
+        margin-top: 15px;
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .redes img {
+        width: 80px;
+    }
+    
+    .correo-electronico {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .correo-electronico h4{
+        margin-top: 2px;
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .form-horizontal h2{
+        font-size: 40px;
+    }
+    
 }
